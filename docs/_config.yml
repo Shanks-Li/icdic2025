@@ -19,8 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   The ICDIC Logo above may be used on presentations. 
   Right-click and choose download. 
   It is a vector graphic and may be used at any scale.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/icdic2026" # the subpath of your site, e.g. /blog
+url: "https://Shanks-Li.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Shanks
 github_username:  Shanks-Li
 
