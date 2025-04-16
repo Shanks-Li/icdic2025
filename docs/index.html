@@ -1,0 +1,535 @@
+---  
+layout: home  
+---  
+<!-- ICDIC 2025 Conference Home Page -->  
+
+<!-- 推荐字体，可选 -->  
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">  
+
+<style>  
+body {  
+    font-family: 'Montserrat', 'Arial', sans-serif;  
+}  
+.grid2x2 {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: auto auto;  
+    grid-gap: 36px 40px;  
+    max-width: 1100px;  
+    margin: 40px auto;  
+    padding: 0 18px;  
+}  
+.grid-item {  
+    background: none;  
+    /* 如需背景可加 */  
+}  
+.header h1 {  
+    font-size: 2.4em; margin: 0 0 0.18em 0;  
+}  
+.header .subtitle {  
+    color: #888;  
+    font-size: 1.1em;  
+    font-weight: 400;  
+    margin-bottom: 0.6em;  
+}  
+.header .place {  
+    font-size: 1.28em;  
+    font-weight: 600;  
+    margin-bottom: 0.08em;  
+}  
+.header .date {  
+    color: #1976d2;   
+    font-size: 1.06em;  
+    font-weight: 500;  
+    margin-bottom: 1em;  
+}  
+
+/* 右上区域上下排图专用嵌套grid */  
+.right-updown {  
+    display: grid;  
+    grid-template-rows: 1fr 1fr;  
+    gap: 18px;  
+    height: 100%;  
+}  
+
+img.hero-img, img.forum-img {  
+    width: 100%;  
+    max-width: 410px;  
+    border-radius: 16px;  
+    aspect-ratio: 16/7;  
+    object-fit: cover;  
+    box-shadow: 0 4px 16px #0001;  
+    display: block;  
+    margin: 0 auto;  
+}  
+
+.button {  
+    display:inline-block; padding:0.5em 1.4em; margin:0.25em 0.3em;  
+    font-size:1.1em; border-radius:6px; border:none; cursor:pointer;  
+    background:#29a66e; color:white; text-decoration:none;  
+}  
+.button.secondary {  
+    background: white; color:#1976d2; border:2px solid #1976d2;  
+}  
+.button.gray {  
+    background: #eee; color:#555; border:none;  
+}  
+.box-title {font-size:1.25em;margin-bottom:0.4em;font-weight:bold;}  
+ul.ann {margin-top:0.6em;}  
+ul.ann li {margin-bottom:0.5em;}  
+/* 移动端变纵向，并让右上两图依次竖排 */  
+@media (max-width: 900px) {  
+    .grid2x2 { grid-template-columns: 1fr; grid-template-rows: auto auto auto auto;}  
+    .right-updown { grid-template-rows: auto auto; }  
+    img.hero-img, img.forum-img { max-width: 100%; }  
+}  
+</style>  
+
+<div class="grid2x2">  
+  <!-- (1,1) 标题/地点/日期 -->  
+  <div class="grid-item">  
+    <div class="header">  
+      <h1>ICDIC 2025</h1>  
+      <div class="subtitle">The 26th IEEE Conference on Distributed Intelligence in Chemical Engineering</div>  
+      <div class="place"><b>Tokyo International Forum, Tokyo, Japan</b></div>  
+      <div class="date"><a href="#">Monday July 8nd through Wednesday July 10th </a></div> 
+    </div>  
+  </div>  
+  <!-- (1,2) 主视觉图片 -->  
+  <div class="grid-item">  
+    <!-- <img class="hero-img" src="images/url.png" alt="Tokyo International Forum">   -->
+        <div class="right-updown">  
+          <img class="hero-img" src="images/url.png" alt="Main Visual">  
+          <img class="forum-img" src="images/forum.jpg" alt="Forum Photo">  
+        </div>  
+  </div>  
+  <!-- (2,1) Registration按钮模块 -->  
+  <div class="grid-item">  
+    <div class="box-title">Registration</div>  
+    <a class="button" href="https://neurips.cc/Register/view-registration" target="_blank">Registration 2025</a>  
+    <a class="button secondary" href="registration.html">Pricing &raquo;</a><br>  
+    <a class="button gray" href="#">Cancellation Policy &raquo;</a>  
+  </div>  
+  <!-- (2,2) Announcements模块 -->  
+  <div class="grid-item">  
+    <div class="box-title">Announcements</div>  
+    <ul class="ann">  
+      <li>ICDIC has released a <a href="#">LLM</a> policy</li>  
+      <li><b>Beware of Unofficial Events:</b> Unless an event is listed on icdic.cc, it is not authorized or endorsed by ICDIC.</li>  
+      <li>The <a href="#">ICDIC 2025 Call For Papers</a> is now available</li>  
+      <li><a href="#">Hotel Information</a></li>  
+      <li><a href="#">Reviewer Self Nomination</a></li>  
+    </ul>  
+  </div>  
+</div>  
+
+<!-- ICIDC Blog Entries Section -->  
+<style>  
+    .blog-box {  
+      background: #f5f7fa;  
+      border-radius: 10px;  
+      padding: 22px 18px 10px 18px;  
+      margin: 38px auto 0 auto;  
+      max-width: 960px;  
+      font-family: 'Montserrat', 'Arial', sans-serif;  
+      border: 1px solid #e0e5ec;  
+      box-sizing: border-box;  
+    }  
+    .blog-title-bar {  
+      font-size: 1.27em;  
+      font-weight: 500;  
+      padding-bottom: 10px;  
+      margin-bottom: 14px;  
+    }  
+    .blog-title-bar a {  
+      color: #1976d2;  
+      text-decoration: underline;  
+      font-weight: 400;  
+      font-size: 0.96em;  
+    }  
+    ul.blog-list {  
+      padding: 0;  
+      margin: 0;  
+      list-style: none;  
+    }  
+    ul.blog-list li {  
+      background: #e6e9ed;  
+      border-radius: 4px;  
+      margin-bottom: 10px;  
+      display: flex;  
+      justify-content: flex-start;  
+      align-items: center;  
+      padding: 5.5px 10px 5.5px 10px;  
+      font-size: 1.04em;  
+    }  
+    ul.blog-list li:last-child { margin-bottom: 2px; }  
+    .blog-date {  
+      width: 90px;  
+      color: #555;  
+      font-size: 0.98em;  
+      flex-shrink: 0;  
+    }  
+    .blog-link {  
+      color: #1976d2;  
+      text-decoration: underline;  
+      margin-left: 16px;  
+      font-size: 1.045em;  
+      display: inline-block;  
+      transition: color .18s;  
+    }  
+    .blog-link:hover {  
+      color: #1658a1;  
+    }  
+    @media (max-width: 525px) {  
+      .blog-date { width: 70px; }  
+      ul.blog-list li { flex-direction: column; align-items: flex-start; gap: 2px;}  
+    }  
+</style>  
+    
+<div class="blog-box">  
+    <div class="blog-title-bar">  
+    Latest ICDIC Blog Entries (  
+        <a href="#">All Entries</a>  
+    )  
+    </div>  
+    <ul class="blog-list">  
+    <li>  
+        <span class="blog-date">Apr 12, 2025</span>  
+        <a class="blog-link" href="#">Guidance for ICDIC Workshop Proposals 2025</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Apr 02, 2025</span>  
+        <a class="blog-link" href="#">ICDIC 2025 Position Paper Track</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Mar 10, 2025</span>  
+        <a class="blog-link" href="#">Self-nomination for reviewing at ICDIC 2025</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Mar 10, 2025</span>  
+        <a class="blog-link" href="#">ICDIC Datasets &amp; Benchmarks: Raising the Bar for Dataset Submissions</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Dec 13, 2024</span>  
+        <a class="blog-link" href="#">ICDIC 2024 Experiment on Improving the Paper-Reviewer Assignment</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Dec 11, 2024</span>  
+        <a class="blog-link" href="#">Announcing the ICDIC 2024 Best Paper Awards</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Dec 11, 2024</span>  
+        <a class="blog-link" href="#">Results of the ICDIC 2024 Experiment on the Usefulness of LLMs as an Author Checklist Assistant for Scientific Papers</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Dec 11, 2024</span>  
+        <a class="blog-link" href="#">Documentary Filming at ICDIC 2024</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Nov 27, 2024</span>  
+        <a class="blog-link" href="#">Announcing the ICDIC 2024 Test of Time Paper Awards</a>  
+    </li>  
+    <li>  
+        <span class="blog-date">Nov 23, 2024</span>  
+        <a class="blog-link" href="#">ICDIC 2024 November Newsletter</a>  
+    </li>  
+    </ul>  
+</div>  
+
+<!-- Important Dates Section -->  
+<style>  
+    .important-dates-box {  
+    background: #f5f7fa;  
+    border-radius: 10px;  
+    padding: 24px 18px 18px 18px;  
+    margin: 38px auto 0 auto;  
+    max-width: 1100px;  
+    font-family: 'Montserrat', 'Arial', sans-serif;  
+    border: 1px solid #e0e5ec;  
+    box-sizing: border-box;  
+    }  
+    .id-title-bar {  
+    font-size: 1.18em;  
+    font-weight: 600;  
+    margin-bottom: 18px;  
+    }  
+    .imp-dates-table {  
+    width: 100%;  
+    border-collapse: collapse;  
+    font-size: 1em;  
+    }  
+    .imp-dates-table th, .imp-dates-table td {  
+    padding: 8px 5px;  
+    vertical-align: top;  
+    }  
+    .imp-dates-table th {  
+    font-weight: 600;  
+    border-bottom: 1px solid #e2e4e6;  
+    color: #323a42;  
+    background: none;  
+    text-align: left;  
+    }  
+    .imp-dates-table td {  
+    color: #363c43;  
+    border-bottom: 1px solid #ececec;  
+    }  
+    .imp-dates-table .date-link {  
+    color: #1976d2;  
+    text-decoration: underline;  
+    font-weight: 400;  
+    transition: color .18s;  
+    }  
+    .imp-dates-table .date-link:hover { color: #1252a2; }  
+    .imp-dates-table .note {  
+    color: #687187;  
+    font-size: 0.97em;  
+    }  
+    .imp-timezone-link {  
+    color: #1976d2;  
+    text-decoration: underline;  
+    margin-left: 0.15em;  
+    }  
+    @media (max-width: 700px) {  
+    .imp-dates-table th, .imp-dates-table td { font-size: 0.98em; padding: 6px 2px;}  
+    .important-dates-box { padding: 16px 2vw 8px 2vw;}  
+    }  
+</style>  
+
+<div class="important-dates-box">  
+    <div class="id-title-bar">Important Dates</div>  
+    <table class="imp-dates-table">  
+    <tbody>  
+        <tr>  
+        <td><a class="date-link" href="#">Paper Submissions Open</a></td>  
+        <td>Apr 03 '25 (Anywhere on Earth)</td>  
+        <td class="note">00 weeks 00 days 00:00:00</td>  
+        </tr>  
+        <tr>  
+        <td><a class="date-link" href="#">Workshop Application Open</a></td>  
+        <td>Apr 14 '25 (Anywhere on Earth)</td>  
+        <td class="note"></td>  
+        </tr>  
+        <tr>  
+        <td><a class="date-link" href="#">Competition Proposal Submission Deadline</a></td>  
+        <td>Apr 20 '25 (Anywhere on Earth)</td>  
+        <td class="note">00 weeks 05 days 08:03:34</td>  
+        </tr>  
+        <tr>  
+        <td>Paper Abstract Submission Deadline</td>  
+        <td>May 11 '25 (Anywhere on Earth)</td>  
+        <td class="note">03 weeks 05 days 08:03:34</td>  
+        </tr>  
+        <tr>  
+        <td>Datasets and Benchmarks - Abstract Submission Deadline</td>  
+        <td>May 11 '25 (Anywhere on Earth)</td>  
+        <td class="note"></td>  
+        </tr>  
+        <tr>  
+        <td>Datasets and Benchmarks - Full Paper Submission and Co-author Registration</td>  
+        <td>May 15 '25 (Anywhere on Earth)</td>  
+        <td class="note">04 weeks 02 days 08:03:34</td>  
+        </tr>  
+        <tr>  
+        <td>Full Paper Submission Deadline</td>  
+        <td>May 15 '25 (Anywhere on Earth)</td>  
+        <td class="note"></td>  
+        </tr>  
+        <tr>  
+        <td>Competition Proposal Submission Notification</td>  
+        <td>May 18 '25 (Anywhere on Earth)</td>  
+        <td class="note"></td>  
+        </tr>  
+        <tr>  
+        <td>Paper Supplemental Material Submission Deadline</td>  
+        <td>May 22 '25 (Anywhere on Earth)</td>  
+        <td class="note"></td>  
+        </tr>  
+        <tr>  
+        <td>Workshop Application Deadline</td>  
+        <td>May 30 '25 (Anywhere on Earth)</td>  
+        <td class="note">06 weeks 03 days 08:03:34</td>  
+        </tr>  
+        <tr>  
+        <td>Expo Calls Open</td>  
+        <td>Jul 01 '25 09:00 PM CST <span class="note">*</span></td>  
+        <td class="note">10 weeks 06 days 09:03:35</td>  
+        </tr>  
+        <tr>  
+        <td>Paper Author Notifications</td>  
+        <td>Sep 18 '25 (Anywhere on Earth)</td>  
+        <td class="note">22 weeks 02 days 08:03:34</td>  
+        </tr>  
+        <tr>  
+        <td>Datasets and Benchmarks – Author Notification</td>  
+        <td>Sep 18 '25 (Anywhere on Earth)</td>  
+        <td class="note"></td>  
+        </tr>  
+        <tr>  
+        <td>Workshop Mandatory Accept/Reject Notification Date</td>  
+        <td>Sep 22 '25 (Anywhere on Earth)</td>  
+        <td class="note">22 weeks 06 days 08:03:34</td>  
+        </tr>  
+        <tr>  
+        <td>Early Registration Deadline</td>  
+        <td>Oct 11 '25 (Anywhere on Earth)</td>  
+        <td class="note"></td>  
+        </tr>  
+        <tr>  
+        <td>Paper Camera Ready Deadline</td>  
+        <td>Oct 23 '25 (Anywhere on Earth)</td>  
+        <td class="note"></td>  
+        </tr>  
+        <tr>  
+        <td>Datasets and Benchmarks - Camera ready</td>  
+        <td>Oct 23 '25 (Anywhere on Earth)</td>  
+        <td class="note">27 weeks 02 days 08:03:34</td>  
+        </tr>  
+        <tr>  
+        <td colspan="3" style="padding-top: 13px;">  
+            <a class="date-link" href="#">All dates</a>  
+            <span class="note" style="float:right;">  
+            Timezone:  
+            <a class="imp-timezone-link" href="#">Asia/Shanghai</a>  
+            </span>  
+        </td>  
+        </tr>  
+    </tbody>  
+    </table>  
+</div>  
+
+<!-- Three Columns Section -->  
+<style>  
+.three-cols {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;  
+    gap: 32px;  
+    max-width: 1100px;  
+    margin: 44px auto 0 auto;  
+    padding: 0 10px;  
+}  
+.three-col-item {  
+    background: #f7f9fa;  
+    border-radius: 13px;  
+    box-shadow: 0 2px 8px #0001;  
+    padding: 30px 22px 24px 22px;  
+    font-family: 'Montserrat', 'Arial', sans-serif;  
+    text-align: left;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: flex-start;  
+}  
+.three-col-item h3 {  
+    font-size: 1.24em;  
+    font-weight: bold;  
+    color: #1976d2;  
+    margin-bottom: 0.7em;  
+}  
+.three-col-item p {  
+    color: #3a4250;  
+    font-size: 1.07em;  
+    margin-bottom: 0.8em;  
+}  
+.three-col-item a {  
+    color: #1976d2;  
+    text-decoration: underline;  
+    font-size: 1.02em;  
+    font-weight: 500;  
+}  
+@media (max-width: 900px) {  
+    .three-cols { grid-template-columns: 1fr; gap: 18px; }  
+    .three-col-item { padding: 2em 0.9em 1.4em 0.9em;}  
+}  
+</style>  
+    
+<div class="three-cols">  
+    <div class="three-col-item">  
+    <h3>About ICDIC</h3>  
+    <p>  
+        ICDIC is the 26th IEEE Conference on Distributed Intelligence in Chemical Engineering, providing a premier forum to present innovative research, exchange ideas, and foster collaborations in the field.  
+    </p>  
+    <a href="#">Learn More &raquo;</a>  
+    </div>  
+    <div class="three-col-item">  
+    <h3>Program Information</h3>  
+    <p>  
+        The conference covers a wide range of topics, including workshops, tutorials, keynote speeches, and poster sessions, giving opportunities for both academic and industry participants to engage.  
+    </p>  
+    <a href="#">View Program &raquo;</a>  
+    </div>  
+    <div class="three-col-item">  
+    <h3>Contact & Support</h3>  
+    <p>  
+        Questions? Reach out to the organizers, or check our FAQ for guidance on submissions, registration, travel arrangements, and more.  
+    </p>  
+    <a href="#">Contact Us &raquo;</a>  
+    </div>  
+</div>  
+
+<!-- Sponsors Section -->  
+<style>  
+    .sponsors-box {  
+        background: #f5f7fa;  
+        border-radius: 11px;  
+        box-shadow: 0 2px 8px #0001;  
+        margin: 44px auto 0 auto;  
+        max-width: 600px;  
+        padding: 32px 16px 28px 16px;  
+        font-family: 'Montserrat', 'Arial', sans-serif;  
+        text-align: center;  
+    }  
+    .sponsors-title {  
+        font-size: 2em;  
+        font-weight: bold;  
+        color: #3182ce;  
+        margin-bottom: 24px;  
+        letter-spacing: 0.5px;  
+    }  
+    .sponsors-grid {  
+        display: grid;  
+        grid-template-columns: repeat(3, 1fr);  /* 2 列 */  
+        grid-template-rows: repeat(2, 1fr);     /* 3 行 */  
+        gap: 28px;  
+        justify-items: center;  
+        align-items: center;  
+    }  
+    .sponsor-logo-box {  
+        background: #fff;  
+        border-radius: 16px;  
+        box-shadow: 0 3px 18px #8abaf80c;  
+        padding: 12px 10px;  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        min-height: 84px;  
+        min-width: 170px;  
+        transition: box-shadow 0.15s, transform 0.13s;  
+    }  
+    .sponsor-logo-box:hover {  
+        box-shadow: 0 6px 28px #477ede17;  
+        transform: translateY(-2px) scale(1.05);  
+    }  
+    .sponsor-logo-box img {  
+        max-height: 56px;  
+        max-width: 140px;  
+        object-fit: contain;  
+        display: block;  
+    }  
+    @media (max-width:700px) {  
+        .sponsors-box { max-width: 98vw; }  
+        .sponsors-grid { grid-template-columns: 1fr; grid-template-rows: none; gap:14px;}  
+        .sponsor-logo-box { min-width:110px; min-height:60px; padding: 7px 2px;}  
+    }  
+</style>  
+    
+<div class="sponsors-box">  
+    <div class="sponsors-title">Sponsors</div>  
+    <div class="sponsors-grid">  
+    <img src="images/sponsors/auto_aca.png" alt="IEEE">  
+    <img src="images/sponsors/ieas.png" alt="IEEE Robotics & Automation Society">  
+    <img src="images/sponsors/ieee.png" alt="IEEE Society">
+    <img src="images/sponsors/ras.png" alt="IEEE RAS Society">  
+    <img src="images/sponsors/smc.png" alt="IEEE SMC Society">  
+    <img src="images/sponsors/smctc.png" alt="IEEE SMCTC Society">   
+    </div>  
+</div>  
+
