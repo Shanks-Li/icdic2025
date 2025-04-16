@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: The 26th IEEE Conference on Distributed Intelligence in Chemical Engineering (ICDIC)
+title: The 26th IEEE Conference on Distributed Intelligence in Chemical Engineering (ICDICE)
 email: shanksreinforcementlearn@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The ICDIC Logo above may be used on presentations. 
+  The ICDICE Logo above may be used on presentations. 
   Right-click and choose download. 
   It is a vector graphic and may be used at any scale.
-baseurl: "/icdic2026" # the subpath of your site, e.g. /blog
+baseurl: "/icdice2025" # the subpath of your site, e.g. /blog
 url: "https://Shanks-Li.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Shanks
 github_username:  Shanks-Li
